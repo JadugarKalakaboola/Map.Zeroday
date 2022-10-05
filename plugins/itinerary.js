@@ -16,7 +16,7 @@
 				opacity: 1,
 				fillOpacity: 0.7
 			},
-			summaryTemplate: '<h2>{name}</h2><h3>{distance}, {time}</h3>',
+			summaryTemplate: '<h2>{name}</h2><h3>{distance}, {time}, {distance*6}</h3>',
 			timeTemplate: '{time}',
 			containerClassName: '',
 			alternativeClassName: '',

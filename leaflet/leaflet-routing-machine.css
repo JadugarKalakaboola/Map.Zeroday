@@ -1,6 +1,11 @@
 .leaflet-routing-container, .leaflet-routing-error {
     width: 320px;
-    background-color: rgba(255, 255, 255, 0.695);
+    background: rgba(106, 147, 174, 0.066);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding-top: 4px;
     transition: all 0.2s ease;
     box-sizing: border-box;
@@ -55,7 +60,12 @@
 }
 
 .leaflet-routing-alt tr:hover {
-    background-color: #eee;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     cursor: pointer;
 }
 
@@ -70,7 +80,7 @@
 
 .leaflet-routing-alt::-webkit-scrollbar-thumb {
     border-radius: 2px;
-    background-color: #888;
+    background-color: rgb(166, 165, 165);
 }
 
 .leaflet-routing-icon {
@@ -104,10 +114,17 @@
 }
 
 .leaflet-routing-geocoders input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 303px;
-    width: calc(100% - 4px);
+    width: calc(100% - 10px);
     line-height: 1.67;
     border: 1px solid #ccc;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 2px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .leaflet-routing-geocoders button {
@@ -124,6 +141,8 @@
 
 .leaflet-routing-add-waypoint:after {
     content: '+';
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .leaflet-routing-reverse-waypoints:after {
@@ -132,7 +151,12 @@
 }
 
 .leaflet-routing-geocoders button:hover {
-    background-color: #eee;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 2px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .leaflet-routing-geocoders input,.leaflet-routing-remove-waypoint,.leaflet-routing-geocoder {
@@ -177,6 +201,7 @@
 }
 
 .leaflet-routing-remove-waypoint:after {
+    content: "✕";
     position: absolute;
     display: block;
     width: 15px;
@@ -184,12 +209,11 @@
     z-index: 1;
     right: 1px;
     top: 4px;
+    padding: 5px;
     bottom: 0;
     margin: auto;
-    padding: 2px;
     font-size: 18px;
     font-weight: bold;
-    content: "\00d7";
     text-align: center;
     cursor: pointer;
     color: #ccc;
@@ -211,9 +235,9 @@
 .leaflet-routing-collapse-btn {
     position: absolute;
     top: 0;
-    right: 6px;
+    left: 6px;
     font-size: 24px;
-    color: #ccc;
+    color: rgb(19, 23, 62);
     font-weight: bold;
 }
 
