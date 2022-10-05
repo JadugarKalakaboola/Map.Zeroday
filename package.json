@@ -19,7 +19,7 @@
     "url": "https://github.com/JadugarKalakaboola/Map.Zeroday/issues"
   },
   "homepage": "https://github.com/JadugarKalakaboola/Map.Zeroday#readme",
-  "dependencies": {
+  "devDependencies": {
     "live-server": "^1.2.2"
   }
 }
