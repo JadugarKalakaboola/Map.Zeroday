@@ -43,8 +43,8 @@
 
 		_findWaypointIndices: function() {
 			var wps = this._route.inputWaypoints,
-			    indices = [],
-			    i;
+					indices = [],
+					i;
 			for (i = 0; i < wps.length; i++) {
 				indices.push(this._findClosestRoutePoint(wps[i].latLng));
 			}
@@ -55,8 +55,8 @@
 		_findClosestRoutePoint: function(latlng) {
 			var minDist = Number.MAX_VALUE,
 				minIndex,
-			    i,
-			    d;
+					i,
+					d;
 
 			for (i = this._route.coordinates.length - 1; i >= 0 ; i--) {
 				// TODO: maybe do this in pixel space instead?
@@ -73,9 +73,9 @@
 		_extendToWaypoints: function() {
 			var wps = this._route.inputWaypoints,
 				wpIndices = this._getWaypointIndices(),
-			    i,
-			    wpLatLng,
-			    routeCoord;
+					i,
+					wpLatLng,
+					routeCoord;
 
 			for (i = 0; i < wps.length; i++) {
 				wpLatLng = wps[i].latLng;
