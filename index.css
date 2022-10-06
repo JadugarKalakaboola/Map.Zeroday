@@ -40,3 +40,9 @@ html {
     height: 50px;
     border-radius: 50%;
 }
+
+.cost-div{
+    padding: 2px;
+    font-size: small;
+    font-weight: 600;
+}

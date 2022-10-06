@@ -31,16 +31,24 @@ var control = L.Routing.control(L.extend(window.lrmConfig, {
 	}
 })).addTo(map);
 
+const costDiv = document.createElement("div");
+costDiv.classList.add('cost-div')
+const costDivText = document.createTextNode("Average Cost of Travelling: ₹"+totalCostSelf+' - ₹'+totalCostPublic);
+costDiv.appendChild(costDivText);
+document.getElementsByClassName('leaflet-routing-container')[0].appendChild(costDiv)
+
 control.on('routeselected', function (e) {
 	var routes = e.route;
 	var summary = routes.summary;
+
+	// calculating distances
 	totalDistance = summary.totalDistance / 1000
 	totalTime =  Math.round(summary.totalTime % 3600 / 60)
 	totalCostSelf = averageCostPerKm * totalDistance
 	totalCostPublic = totalCostSelf + fixedCharge
 	console.log(Math.round(totalCostSelf*100)/100 , totalCostPublic)
-	document.getElementsByClassName('leaflet-routing-alt').id += 'detail-stats'
 
+	document.getElementsByClassName('cost-div')[0].textContent = "Average Cost of Travelling: ₹"+totalCostSelf+' - ₹'+totalCostPublic
 	// alert distance and time in km and minutes
 	console.log('Total distance is ' + summary.totalDistance / 1000 + ' km and total time is ' + Math.round(summary.totalTime % 3600 / 60) + ' minutes');
 });
