@@ -33,6 +33,7 @@ html {
     position: absolute;
     left: 0.5%;
     top: 12%;
+    cursor: pointer;
 }
 
 .switch img{
@@ -42,7 +43,8 @@ html {
 }
 
 .cost-div{
-    padding: 2px;
-    font-size: small;
+    padding: 11px;
+    font-size: 14px;
     font-weight: 600;
+    color: rgb(7, 78, 7);
 }
