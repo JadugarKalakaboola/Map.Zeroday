@@ -18,7 +18,7 @@ A map webapp made with the leaflet API for Zeroday hackaton conducted by MSM Del
 
 ## Installation
 
-- Download the zip file or clone the repository using `git clone https://github.com/JadugarKalakaboola/maple.git`
+- Download the zip file or clone the repository using `git clone https://github.com/JadugarKalakaboola/Map.Zeroday.git`
 - Install the live-server npm package by `npm install -g live-server` or download the live-server extension.
 - run `npm install`
 - run `npm start` or `npm live`
